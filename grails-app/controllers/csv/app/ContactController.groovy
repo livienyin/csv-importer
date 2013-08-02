@@ -1,6 +1,8 @@
 package csv.app
 
 import org.springframework.dao.DataIntegrityViolationException
+import java.io.File
+import org.apache.commons.io.FileUtils
 
 class ContactController {
 
@@ -102,31 +104,30 @@ class ContactController {
 
     def upload() {
 
-        def file = request.getFile('file')
+        /*
+        def tempData = request.getFile('file').inputStream.text
+        File tempFile = new File("temp")
+        tempFile.createNewFile()
+        FileUtils.writeStringToFile(tempFile, tempData)
+        */
 
-        static Map CONFIG_CONTACT_COLUMN_MAP = [
-                sheet: file,
-                startRow: 2,
-                columnMap:  [
-                        'email':'email',
-                        'first_name':'firstName',
-                        'last_name':'lastName',
-                        'prefix':'prefix',
-                        'phone':'phone',
-                        'fax':'fax',
-                        'title':'title'
-                ]
-        ]
+        // File tempFile = File.createTempFile("temp", ".csv").with {write uploadedFile}
 
-        //File tempFile = file.createTempFile("file", ".csv").with {write file.text}
-        tempFile.eachCsvLine { tokens ->
-            new Contact(email: tokens[0],
+        def tempFile = request.getFile('file')
+        tempFile.transferTo(new File('/Users/livienyin/Desktop/temp/tempFile.csv'))
+
+        // create variable for tempFile and remove plug in code
+        new File('/Users/livienyin/Desktop/temp/tempFile.csv').eachCsvLine { tokens ->
+            println tokens[0].getClass()
+            def contact = new Contact(email: tokens[0],
                         firstName: tokens[1],
                         lastName: tokens[2],
                         prefix: tokens[3],
                         phone: tokens[4],
                         fax: tokens[5],
-                        title: tokens[6]).save()
+                        title: tokens[6])
+            def result = contact.save()
+            println result
         }
 
         render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])

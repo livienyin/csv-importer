@@ -16,7 +16,7 @@
 			</ul>
 		</div>
 
-        <g:uploadForm action="upload">
+        <g:uploadForm action="upload" enctype="multipart/form-data">
             <input type="file" name="file">
             <input type="submit">
         </g:uploadForm>

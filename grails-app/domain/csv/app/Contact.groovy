@@ -11,6 +11,7 @@ class Contact {
     String phone
     String fax
     String title
+    String id
 
     static constraints = {
         email(email:true)
