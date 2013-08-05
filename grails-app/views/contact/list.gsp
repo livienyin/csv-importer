@@ -41,7 +41,9 @@
 						<g:sortableColumn property="phone" title="${message(code: 'contact.phone.label', default: 'Phone')}" />
 					
 						<g:sortableColumn property="fax" title="${message(code: 'contact.fax.label', default: 'Fax')}" />
-					
+
+                        <g:sortableColumn property="company" title="${message(code: 'contact.company.label', default: 'Company')}" />
+
 					</tr>
 				</thead>
 				<tbody>
@@ -59,6 +61,8 @@
 						<td>${fieldValue(bean: contactInstance, field: "phone")}</td>
 					
 						<td>${fieldValue(bean: contactInstance, field: "fax")}</td>
+
+                        <td>${fieldValue(bean: contactInstance, field: "company")}</td>
 					
 					</tr>
 				</g:each>

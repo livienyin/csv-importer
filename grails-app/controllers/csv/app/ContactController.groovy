@@ -116,18 +116,23 @@ class ContactController {
         def tempFile = request.getFile('file')
         tempFile.transferTo(new File('/Users/livienyin/Desktop/temp/tempFile.csv'))
 
-        // create variable for tempFile and remove plug in code
-        new File('/Users/livienyin/Desktop/temp/tempFile.csv').eachCsvLine { tokens ->
-            println tokens[0].getClass()
-            def contact = new Contact(email: tokens[0],
-                        firstName: tokens[1],
-                        lastName: tokens[2],
-                        prefix: tokens[3],
-                        phone: tokens[4],
-                        fax: tokens[5],
-                        title: tokens[6])
-            def result = contact.save()
-            println result
+        new File('/Users/livienyin/Desktop/temp/tempFile.csv').splitEachLine(',') { row ->
+
+            def contact = Contact.findByEmail(row[0]) ?: new Contact(
+                email: row[0],
+                firstName: row[1],
+                lastName: row[2],
+                prefix: row[3],
+                phone: row[4],
+                fax: row[5],
+                title: row[6])
+            def company = Company.findByName(row[7]) ?: new Company(name: row[7])
+            company.save(flush: true)
+            company.addToContacts(contact)
+            contact.save(flush: true)
+
+            println contact
+
         }
 
         render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])

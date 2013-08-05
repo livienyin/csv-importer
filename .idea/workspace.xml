@@ -4,13 +4,13 @@
     <list default="true" id="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" name="Default" comment="" />
     <ignored path="csv-app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/../monolith/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375478497921" ignored="false" />
+    <file path="$PROJECT_DIR$/../monolith/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375670419030" ignored="false" />
     <file path="$PROJECT_DIR$/../csv-assignment/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375307535525" ignored="false" />
-    <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375478535891" ignored="false" />
+    <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375670330137" ignored="false" />
     <file path="/Company.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375401848157" ignored="false" />
     <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375381569718" ignored="false" />
-    <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375379353914" ignored="false" />
-    <file path="/Contact.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375401829554" ignored="false" />
+    <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375670024308" ignored="false" />
+    <file path="/Contact.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375669081013" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <file leaf-file-name="Contact.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.4">
+            <state line="4" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.8">
               <folding />
             </state>
           </provider>
@@ -83,19 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSource.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="75" selection-start="106" selection-end="106" vertical-scroll-proportion="-2.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Company.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Company.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="-1.4">
+            <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.8">
               <folding />
             </state>
           </provider>
@@ -107,7 +98,7 @@
       <file leaf-file-name="ContactController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="63" selection-start="4249" selection-end="4249" vertical-scroll-proportion="0.47004607">
+            <state line="132" column="42" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.76958525">
               <folding>
                 <element signature="e#17#79#0" expanded="true" />
               </folding>
@@ -118,7 +109,7 @@
       <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="66" selection-start="827" selection-end="827" vertical-scroll-proportion="-3.9583333">
+            <state line="64" column="79" selection-start="2767" selection-end="2767" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -144,9 +135,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/contact/list.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Company.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/contact/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy" />
       </list>
     </option>
@@ -593,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/CompanyController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="586" selection-end="586" vertical-scroll-proportion="11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="9" selection-start="44" selection-end="44" vertical-scroll-proportion="0.02183406">
@@ -607,43 +592,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="106" selection-end="106" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.8">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/CompanyController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="586" selection-end="586" vertical-scroll-proportion="11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="66" selection-start="827" selection-end="827" vertical-scroll-proportion="-3.9583333">
+        <state line="64" column="79" selection-start="2767" selection-end="2767" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Company.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="-1.4">
+        <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.8">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.4">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="75" selection-start="106" selection-end="106" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="63" selection-start="4249" selection-end="4249" vertical-scroll-proportion="0.47004607">
+        <state line="132" column="42" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.76958525">
           <folding>
             <element signature="e#17#79#0" expanded="true" />
           </folding>
