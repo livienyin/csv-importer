@@ -90,7 +90,7 @@ class ContactController {
     }
 
     def delete(Long id) {
-        def contactInstance = Contact.get(id)
+        def contactInstance = Contact.get(id) ?: Contact.get(params.id)
         if (!contactInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'contact.label', default: 'Contact'), id])
             redirect(action: "list")
@@ -107,7 +107,6 @@ class ContactController {
             redirect(action: "show", id: id)
         }
     }
-
 
     def upload() {
 

@@ -8,6 +8,7 @@
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
+    <div id="main-content">
 		<a href="#list-contact" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
@@ -26,13 +27,6 @@
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-            <div id="message" class="error"></div>
-            <div id="error" class="error"></div>
-            <g:javascript>
-                function contactRemoved(contactId) {
-                    Effect.toggle('contact-' + contactId, 'appear');
-                }
-            </g:javascript>
 
             <table>
 				<thead>
@@ -74,7 +68,7 @@
 
                         <td>${fieldValue(bean: contactInstance, field: "company")}</td>
 
-
+                        <td><g:remoteLink controller="contact" action="delete" params="${[id:contactInstance.id]}" update="main-content">delete</g:remoteLink></td>
 					
 					</tr>
 				</g:each>
@@ -84,5 +78,7 @@
 				<g:paginate total="${contactInstanceTotal}" />
 			</div>
 		</div>
-	</body>
+    </div>
+    </body>
+
 </html>
