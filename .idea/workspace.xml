@@ -4,9 +4,9 @@
     <list default="true" id="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" name="Default" comment="" />
     <ignored path="csv-app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/../monolith/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375670419030" ignored="false" />
+    <file path="$PROJECT_DIR$/../monolith/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375673534238" ignored="false" />
     <file path="$PROJECT_DIR$/../csv-assignment/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375307535525" ignored="false" />
-    <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375670330137" ignored="false" />
+    <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375673437906" ignored="false" />
     <file path="/Company.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375401848157" ignored="false" />
     <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375381569718" ignored="false" />
     <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375670024308" ignored="false" />
@@ -98,7 +98,7 @@
       <file leaf-file-name="ContactController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="42" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.76958525">
+            <state line="121" column="24" selection-start="4355" selection-end="4355" vertical-scroll-proportion="0.3778802">
               <folding>
                 <element signature="e#17#79#0" expanded="true" />
               </folding>
@@ -635,7 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="42" selection-start="4772" selection-end="4772" vertical-scroll-proportion="0.76958525">
+        <state line="121" column="24" selection-start="4355" selection-end="4355" vertical-scroll-proportion="0.3778802">
           <folding>
             <element signature="e#17#79#0" expanded="true" />
           </folding>
