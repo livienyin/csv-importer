@@ -26,7 +26,15 @@
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+            <div id="message" class="error"></div>
+            <div id="error" class="error"></div>
+            <g:javascript>
+                function contactRemoved(contactId) {
+                    Effect.toggle('contact-' + contactId, 'appear');
+                }
+            </g:javascript>
+
+            <table>
 				<thead>
 					<tr>
 					
@@ -44,11 +52,13 @@
 
                         <g:sortableColumn property="company" title="${message(code: 'contact.company.label', default: 'Company')}" />
 
+                        <g:sortableColumn property="delete" title="Delete" />
+
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${contactInstanceList}" status="i" var="contactInstance">
-					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					<tr id="contact-${contactInstance.id}" class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${contactInstance.id}">${fieldValue(bean: contactInstance, field: "email")}</g:link></td>
 					
@@ -63,6 +73,8 @@
 						<td>${fieldValue(bean: contactInstance, field: "fax")}</td>
 
                         <td>${fieldValue(bean: contactInstance, field: "company")}</td>
+
+
 					
 					</tr>
 				</g:each>

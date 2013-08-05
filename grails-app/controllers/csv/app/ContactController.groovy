@@ -3,10 +3,16 @@ package csv.app
 import org.springframework.dao.DataIntegrityViolationException
 import java.io.File
 import org.apache.commons.io.FileUtils
+import grails.converters.JSON
 
 class ContactController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+
+    def getJSON = {
+        def contacts = Contact.all
+        render contacts as JSON
+    }
 
     def index() {
         redirect(action: "list", params: params)
@@ -103,15 +109,6 @@ class ContactController {
     }
 
     def upload() {
-
-        /*
-        def tempData = request.getFile('file').inputStream.text
-        File tempFile = new File("temp")
-        tempFile.createNewFile()
-        FileUtils.writeStringToFile(tempFile, tempData)
-        */
-
-        // File tempFile = File.createTempFile("temp", ".csv").with {write uploadedFile}
 
         def tempFile = request.getFile('file')
         tempFile.transferTo(new File('/Users/livienyin/Desktop/temp/tempFile.csv'))
