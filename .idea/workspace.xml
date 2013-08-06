@@ -4,14 +4,14 @@
     <list default="true" id="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" name="Default" comment="" />
     <ignored path="csv-app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/../monolith/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375810391911" ignored="false" />
+    <file path="$PROJECT_DIR$/../monolith/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375811790892" ignored="false" />
     <file path="$PROJECT_DIR$/../csv-assignment/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375307535525" ignored="false" />
-    <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375810330889" ignored="false" />
+    <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375810990042" ignored="false" />
     <file path="/Company.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375401848157" ignored="false" />
     <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375381569718" ignored="false" />
-    <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375810034422" ignored="false" />
+    <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375811814311" ignored="false" />
     <file path="/Contact.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375727121935" ignored="false" />
-    <file path="/main.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375723126376" ignored="false" />
+    <file path="/main.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375811770698" ignored="false" />
     <file path="$PROJECT_DIR$/../monolith/test/restful/credit_invoice_full.json" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375726656280" ignored="false" />
     <file path="/BootStrap.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375736379260" ignored="false" />
     <file path="/_createBox.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375809894826" ignored="false" />
@@ -75,10 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContactController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ContactController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="47" selection-start="1103" selection-end="1103" vertical-scroll-proportion="-1.3003194">
+            <state line="140" column="93" selection-start="5273" selection-end="5273" vertical-scroll-proportion="-3.8493152">
               <folding>
                 <element signature="e#17#79#0" expanded="true" />
               </folding>
@@ -86,10 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="list.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="23" selection-start="955" selection-end="955" vertical-scroll-proportion="2.7083333">
+            <state line="10" column="10" selection-start="333" selection-end="333" vertical-scroll-proportion="0.23923445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="25" selection-start="1216" selection-end="1216" vertical-scroll-proportion="-6.122449">
               <folding />
             </state>
           </provider>
@@ -155,10 +164,10 @@
         <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Company.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/contact/_createBox.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/contact/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/contact/list.gsp" />
       </list>
     </option>
   </component>
@@ -505,6 +514,7 @@
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -523,7 +533,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -657,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.38277513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/company/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="19" selection-start="1301" selection-end="1305" vertical-scroll-proportion="-4.072165">
@@ -718,19 +720,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="955" selection-end="955" vertical-scroll-proportion="2.7083333">
+        <state line="140" column="93" selection-start="5273" selection-end="5273" vertical-scroll-proportion="-3.8493152">
+          <folding>
+            <element signature="e#17#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="1216" selection-end="1216" vertical-scroll-proportion="-6.122449">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="47" selection-start="1103" selection-end="1103" vertical-scroll-proportion="-1.3003194">
-          <folding>
-            <element signature="e#17#79#0" expanded="true" />
-          </folding>
+        <state line="10" column="10" selection-start="333" selection-end="333" vertical-scroll-proportion="0.23923445">
+          <folding />
         </state>
       </provider>
     </entry>

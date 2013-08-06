@@ -9,7 +9,6 @@
         <g:javascript library="jquery" />
 	</head>
 	<body>
-    <div id="main-content">
 		<a href="#list-contact" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
@@ -81,7 +80,6 @@
 
             <g:render template="createBox"/>
 		</div>
-    </div>
     </body>
 
 </html>
