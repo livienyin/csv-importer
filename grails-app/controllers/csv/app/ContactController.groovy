@@ -38,6 +38,17 @@ class ContactController {
         redirect(action: "show", id: contactInstance.id)
     }
 
+    def ajaxSave() {
+        def contactInstance = new Contact(params)
+        if (!contactInstance.save(flush: true)) {
+            render(view: "create", model: [contactInstance: contactInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.created.message', args: [message(code: 'contact.label', default: 'Contact'), contactInstance.id])
+        render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])
+    }
+
     def show(Long id) {
         def contactInstance = Contact.get(id)
         if (!contactInstance) {
@@ -106,6 +117,13 @@ class ContactController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'contact.label', default: 'Contact'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+    def ajaxDelete() {
+        def contactInstance = Contact.get(params.id)
+        contactInstance.delete(flush: true)
+        flash.message = message(code: 'default.deleted.message', args: [message(code: 'contact.label', default: 'Contact'), params.id])
+        render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])
     }
 
     def upload() {

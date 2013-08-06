@@ -6,6 +6,7 @@
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'contact.label', default: 'Contact')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
+        <g:javascript library="jquery" />
 	</head>
 	<body>
     <div id="main-content">
@@ -68,7 +69,7 @@
 
                         <td>${fieldValue(bean: contactInstance, field: "company")}</td>
 
-                        <td><g:remoteLink controller="contact" action="delete" params="${[id:contactInstance.id]}" update="main-content">delete</g:remoteLink></td>
+                        <td><g:remoteLink action="ajaxDelete" params="${[id:contactInstance.id]}" update="main-content">delete</g:remoteLink></td>
 					
 					</tr>
 				</g:each>
@@ -77,6 +78,8 @@
 			<div class="pagination">
 				<g:paginate total="${contactInstanceTotal}" />
 			</div>
+
+            <g:render template="createBox"/>
 		</div>
     </div>
     </body>
