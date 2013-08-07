@@ -103,14 +103,20 @@
             });
         }
         method.open = function(settings){
-            $content.empty().append("<p>'hello'</p>");
-            console.log(settings.content)
+            $.ajax({
+                url: '/csv-app/contact/createForm',
+                success: function(data) {
+                    $content.empty().append(data);
+                }
+            })
+
             $modal.css({
                 width: settings.width || 'auto',
                 height: settings.height || 'auto'
             });
             method.center();
             $(window).bind('resize.modal', method.center);
+            $modal.append($content);
             $modal.show();
             $overlay.show();
         }
@@ -144,8 +150,8 @@
 
     $(document).ready(function(){
         $('a#howdy').click(function(event){
-            modal.open({content: "it works!", height: "200px", width: "200px"});
             event.preventDefault();
+            modal.open({content: "it works!"});
         })
     })
 </g:javascript>

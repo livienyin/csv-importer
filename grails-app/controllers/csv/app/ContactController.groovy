@@ -5,6 +5,7 @@ import java.io.File
 import org.apache.commons.io.FileUtils
 import grails.converters.JSON
 
+
 class ContactController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -153,5 +154,9 @@ class ContactController {
 
         render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])
 
+    }
+
+    def createForm() {
+        render(template: "createBox", model: [contactInstanceList: [], contactInstanceTotal: 0])
     }
 }
