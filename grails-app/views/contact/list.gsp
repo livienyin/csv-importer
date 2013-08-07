@@ -19,7 +19,7 @@
 			</ul>
 		</div>
 
-        <g:uploadForm action="upload" enctype="multipart/form-data">
+        <g:uploadForm action="csvUpload" enctype="multipart/form-data">
             <input type="file" name="file">
             <input type="submit">
         </g:uploadForm>
@@ -50,6 +50,8 @@
 
                         <g:sortableColumn property="delete" title="Delete" />
 
+                        <g:sortableColumn property="edit" title="Edit" />
+
 					</tr>
 				</thead>
 				<tbody>
@@ -72,6 +74,8 @@
 
                         <td><g:remoteLink action="ajaxDelete" params="${[id:contactInstance.id]}" update="main-content">delete</g:remoteLink></td>
 
+                        <td><g:link elementId="ajax-edit" action="editModal" id="${contactInstance.id}">edit</g:link></td>
+
 					</tr>
 				</g:each>
 				</tbody>
@@ -91,6 +95,11 @@
             $content,
             $close;
 
+        $overlay = $('<div id="overlay"></div>');
+        $modal = $('<div id="modal"></div>');
+        $content = $('<div id="content"></div>');
+        $close = $('<a id="close" href="#">close</a>');
+
         method.center = function(){
             var top, left;
             top = Math.max($(window).height() - $modal.height(), 0) / 2;
@@ -107,6 +116,7 @@
                     $content.empty().append(data);
                     $modal.append($content);
                     method.center();
+                    $modal.append($close);
                 }
             });
 
@@ -117,43 +127,41 @@
 
             $(window).bind('resize.modal', method.center);
 
-            $modal.show();
             $overlay.show();
+            $modal.show();
 
         }
         method.close = function(){
-            console.log("hit close method");
             $modal.hide();
             $overlay.hide();
             $content.empty();
             $(window).unbind('resize.modal');
         }
 
-        $overlay = $('<div id="overlay"></div>');
-        $modal = $('<div id="modal"></div>');
-        $content = $('<div id="content"></div>');
-        $close = $('<a id="close" href="#">close</a>');
-
-        $modal.hide();
-        $overlay.hide();
-        $modal.append($overlay, $close);
-
-        $(document).ready(function(){
-            $('body').append($overlay, $modal);
-        })
-
         $close.click(function(event){
             event.preventDefault();
             method.close();
         })
 
+        $modal.hide();
+        $overlay.hide();
+
+        $(document).ready(function(){
+            $('body').append($overlay, $modal);
+        })
         return method;
     }());
 
     $(document).ready(function(){
         $('a#ajax-create').click(function(event){
             event.preventDefault();
-            modal.open({url: '/csv-app/contact/createForm'});
+            modal.open({url: '/csv-app/contact/createModal'});
+        })
+
+        $('a#ajax-edit').click(function(event){
+            var link = $(this).attr('href');
+            event.preventDefault();
+            modal.open({url: link});
         })
     })
 </g:javascript>

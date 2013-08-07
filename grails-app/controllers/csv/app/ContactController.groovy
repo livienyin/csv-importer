@@ -127,7 +127,7 @@ class ContactController {
         render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])
     }
 
-    def upload() {
+    def csvUpload() {
 
         def tempFile = request.getFile('file')
         tempFile.transferTo(new File('/Users/livienyin/Desktop/temp/tempFile.csv'))
@@ -156,7 +156,12 @@ class ContactController {
 
     }
 
-    def createForm() {
-        render(template: "createBox", model: [contactInstanceList: [], contactInstanceTotal: 0])
+    def createModal() {
+        render(template: "createModal", model: [contactInstanceList: [], contactInstanceTotal: 0])
+    }
+
+    def editModal(Long id) {
+        def contactInstance = Contact.get(id)
+        render(template: "editModal", model: [contactInstance: contactInstance])
     }
 }
