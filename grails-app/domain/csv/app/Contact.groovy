@@ -13,5 +13,6 @@ class Contact {
     String title
 
     static constraints = {
+
     }
 }

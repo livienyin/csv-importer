@@ -15,13 +15,13 @@
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
                 <li><a id="ajax-create" href="#">Ajax Create</a></li>
+
+                <g:uploadForm action="csvUpload" enctype="multipart/form-data">
+                    <li><input type="file" name="file"></li>
+                    <li><input type="submit" value="Upload CSV"></li>
+                </g:uploadForm>
 			</ul>
 		</div>
-
-        <g:uploadForm action="csvUpload" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit">
-        </g:uploadForm>
 
 		<div id="list-contact" class="content scaffold-list" role="main">
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
@@ -49,9 +49,9 @@
 
                         <g:sortableColumn property="title" title="${message(code: 'contact.title.label', default: 'Title')}" />
 
-                        <g:sortableColumn property="edit" title="Edit" />
+                        <th>Edit</th>
 
-                        <g:sortableColumn property="delete" title="Delete" />
+                        <th>Delete</th>
 
 					</tr>
 				</thead>

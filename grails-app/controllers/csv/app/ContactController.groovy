@@ -159,9 +159,9 @@ class ContactController {
     def csvUpload() {
 
         def tempFile = request.getFile('file')
-        tempFile.transferTo(new File('/Users/livienyin/Desktop/temp/tempFile.csv'))
+        tempFile.transferTo(new File('/tmp/tempFile.csv'))
 
-        File csvFile = new File('/Users/livienyin/Desktop/temp/tempFile.csv')
+        File csvFile = new File('/tmp/tempFile.csv')
         def rowNum = 0
         csvFile.splitEachLine(',') { row ->
             if (rowNum > 0) {
@@ -180,9 +180,7 @@ class ContactController {
             }
             rowNum++
         }
-
-        render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])
-
+        redirect(action: "list")
     }
 
     def createModal() {
