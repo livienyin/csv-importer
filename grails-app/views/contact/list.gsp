@@ -15,6 +15,7 @@
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+                <li><a id="ajax-create" href="#">Ajax Create</a></li>
 			</ul>
 		</div>
 
@@ -78,9 +79,6 @@
 			<div class="pagination">
 				<g:paginate total="${contactInstanceTotal}" />
 			</div>
-
-            <g:render template="createBox"/>
-            <a id="howdy" href="#">click here</a>
 		</div>
     </body>
 </html>
@@ -95,8 +93,8 @@
 
         method.center = function(){
             var top, left;
-            top = Math.max($(window).height() - $modal.outerHeight(), 0) / 2
-            left = Math.max($(window).width() - $modal.outerWidth(), 0) / 2
+            top = Math.max($(window).height() - $modal.height(), 0) / 2;
+            left = Math.max($(window).width() - $modal.width(), 0) / 2;
             $modal.css({
                 top:top + $(window).scrollTop(),
                 left:left + $(window).scrollLeft()
@@ -104,23 +102,27 @@
         }
         method.open = function(settings){
             $.ajax({
-                url: '/csv-app/contact/createForm',
+                url: settings.url,
                 success: function(data) {
                     $content.empty().append(data);
+                    $modal.append($content);
+                    method.center();
                 }
-            })
+            });
 
             $modal.css({
                 width: settings.width || 'auto',
                 height: settings.height || 'auto'
             });
-            method.center();
+
             $(window).bind('resize.modal', method.center);
-            $modal.append($content);
+
             $modal.show();
             $overlay.show();
+
         }
         method.close = function(){
+            console.log("hit close method");
             $modal.hide();
             $overlay.hide();
             $content.empty();
@@ -149,9 +151,9 @@
     }());
 
     $(document).ready(function(){
-        $('a#howdy').click(function(event){
+        $('a#ajax-create').click(function(event){
             event.preventDefault();
-            modal.open({content: "it works!"});
+            modal.open({url: '/csv-app/contact/createForm'});
         })
     })
 </g:javascript>
