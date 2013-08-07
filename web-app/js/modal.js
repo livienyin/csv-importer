@@ -6,6 +6,11 @@ var modal = (function(){
         $content,
         $close;
 
+    $overlay = $('<div id="overlay"></div>');
+    $modal = $('<div id="modal"></div>');
+    $content = $('<div id="content"></div>');
+    $close = $('<a id="close" href="#">close</a>');
+
     method.center = function(){
         var top, left;
         top = Math.max($(window).height() - $modal.height(), 0) / 2;
@@ -22,6 +27,7 @@ var modal = (function(){
                 $content.empty().append(data);
                 $modal.append($content);
                 method.center();
+                $modal.append($close);
             }
         });
 
@@ -32,42 +38,40 @@ var modal = (function(){
 
         $(window).bind('resize.modal', method.center);
 
-        $modal.show();
         $overlay.show();
-
+        $modal.show();
     }
     method.close = function(){
-        console.log("hit close method");
         $modal.hide();
         $overlay.hide();
         $content.empty();
         $(window).unbind('resize.modal');
     }
 
-    $overlay = $('<div id="overlay"></div>');
-    $modal = $('<div id="modal"></div>');
-    $content = $('<div id="content"></div>');
-    $close = $('<a id="close" href="#">close</a>');
-
-    $modal.hide();
-    $overlay.hide();
-    $modal.append($overlay, $close);
-
-    $(document).ready(function(){
-        $('body').append($overlay, $modal);
-    })
-
     $close.click(function(event){
         event.preventDefault();
         method.close();
     })
 
+    $modal.hide();
+    $overlay.hide();
+
+    $(document).ready(function(){
+        console.log("hello");
+        $('body').append($overlay, $modal);
+    })
     return method;
 }());
 
 $(document).ready(function(){
     $('a#ajax-create').click(function(event){
         event.preventDefault();
-        modal.open({url: '/csv-app/contact/createForm'});
+        modal.open({url: '/csv-app/contact/createModal'});
+    })
+
+    $('a#ajax-edit').click(function(event){
+        var link = $(this).attr('href');
+        event.preventDefault();
+        modal.open({url: link});
     })
 })

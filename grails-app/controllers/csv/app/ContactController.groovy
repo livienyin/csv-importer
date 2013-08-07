@@ -10,7 +10,7 @@ class ContactController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
-    def getJSON = {
+    def json = {
         def contacts = Contact.all
         render contacts as JSON
     }
