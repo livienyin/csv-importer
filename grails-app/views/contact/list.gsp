@@ -4,6 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'modal.css')}" type="text/css">
 		<g:set var="entityName" value="${message(code: 'contact.label', default: 'Contact')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
         <g:javascript library="jquery" />
@@ -69,7 +70,7 @@
                         <td>${fieldValue(bean: contactInstance, field: "company")}</td>
 
                         <td><g:remoteLink action="ajaxDelete" params="${[id:contactInstance.id]}" update="main-content">delete</g:remoteLink></td>
-					
+
 					</tr>
 				</g:each>
 				</tbody>
@@ -79,7 +80,72 @@
 			</div>
 
             <g:render template="createBox"/>
+            <a id="howdy" href="#">click here</a>
 		</div>
     </body>
-
 </html>
+<g:javascript>
+    var modal = (function(){
+
+        var method = {},
+            $modal,
+            $overlay,
+            $content,
+            $close;
+
+        method.center = function(){
+            var top, left;
+            top = Math.max($(window).height() - $modal.outerHeight(), 0) / 2
+            left = Math.max($(window).width() - $modal.outerWidth(), 0) / 2
+            $modal.css({
+                top:top + $(window).scrollTop(),
+                left:left + $(window).scrollLeft()
+            });
+        }
+        method.open = function(settings){
+            $content.empty().append("<p>'hello'</p>");
+            console.log(settings.content)
+            $modal.css({
+                width: settings.width || 'auto',
+                height: settings.height || 'auto'
+            });
+            method.center();
+            $(window).bind('resize.modal', method.center);
+            $modal.show();
+            $overlay.show();
+        }
+        method.close = function(){
+            $modal.hide();
+            $overlay.hide();
+            $content.empty();
+            $(window).unbind('resize.modal');
+        }
+
+        $overlay = $('<div id="overlay"></div>');
+        $modal = $('<div id="modal"></div>');
+        $content = $('<div id="content"></div>');
+        $close = $('<a id="close" href="#">close</a>');
+
+        $modal.hide();
+        $overlay.hide();
+        $modal.append($overlay, $close);
+
+        $(document).ready(function(){
+            $('body').append($overlay, $modal);
+        })
+
+        $close.click(function(event){
+            event.preventDefault();
+            method.close();
+        })
+
+        return method;
+    }());
+
+    $(document).ready(function(){
+        $('a#howdy').click(function(event){
+            modal.open({content: "it works!", height: "200px", width: "200px"});
+            event.preventDefault();
+        })
+    })
+</g:javascript>
