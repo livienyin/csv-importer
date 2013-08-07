@@ -48,6 +48,8 @@
 
                         <g:sortableColumn property="company" title="${message(code: 'contact.company.label', default: 'Company')}" />
 
+                        <g:sortableColumn property="title" title="${message(code: 'contact.title.label', default: 'Title')}" />
+
                         <g:sortableColumn property="delete" title="Delete" />
 
                         <g:sortableColumn property="edit" title="Edit" />
@@ -71,6 +73,8 @@
 						<td>${fieldValue(bean: contactInstance, field: "fax")}</td>
 
                         <td>${fieldValue(bean: contactInstance, field: "company")}</td>
+
+                        <td>${fieldValue(bean: contactInstance, field: "title")}</td>
 
                         <td><g:remoteLink action="ajaxDelete" params="${[id:contactInstance.id]}" update="main-content">delete</g:remoteLink></td>
 

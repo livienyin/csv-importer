@@ -101,6 +101,35 @@ class ContactController {
         redirect(action: "show", id: contactInstance.id)
     }
 
+    def ajaxUpdate(Long id, Long version) {
+        def contactInstance = Contact.get(id)
+        if (!contactInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'contact.label', default: 'Contact'), id])
+            redirect(action: "list")
+            return
+        }
+
+        if (version != null) {
+            if (contactInstance.version > version) {
+                contactInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'contact.label', default: 'Contact')] as Object[],
+                        "Another user has updated this Contact while you were editing")
+                render(view: "edit", model: [contactInstance: contactInstance])
+                return
+            }
+        }
+
+        contactInstance.properties = params
+
+        if (!contactInstance.save(flush: true)) {
+            render(view: "edit", model: [contactInstance: contactInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'contact.label', default: 'Contact'), contactInstance.id])
+        render(view: "list", model: [contactInstanceList: Contact.list(params), contactInstanceTotal: Contact.count()])
+    }
+
     def delete(Long id) {
         def contactInstance = Contact.get(id) ?: Contact.get(params.id)
         if (!contactInstance) {
