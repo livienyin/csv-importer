@@ -1,0 +1,196 @@
+/* NAVIGATION MENU */
+.nav {
+    background-color: #efefef;
+    padding: 0.5em 0.75em;
+    -moz-box-shadow: 0 0 3px 1px #aaaaaa;
+    -webkit-box-shadow: 0 0 3px 1px #aaaaaa;
+    box-shadow: 0 0 3px 1px #aaaaaa;
+    zoom: 1;
+}
+
+.nav ul {
+    overflow: hidden;
+    padding-left: 0;
+    zoom: 1;
+}
+
+.nav li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin-right: 0.5em;
+    padding: 0;
+}
+
+.nav a {
+    color: #666666;
+    display: block;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+}
+
+.nav a:active, .nav a:visited {
+    color: #666666;
+}
+
+.nav a:focus, .nav a:hover {
+    background-color: #999999;
+    color: #ffffff;
+    outline: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
+    background-color: transparent;
+    color: #444444;
+    text-decoration: underline;
+}
+
+.nav a.home, .nav a.list, .nav a.create {
+    background-position: 0.7em center;
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
+
+input[type="file"] {
+    background-color: #fcfcfc;
+    border: 1px solid #cccccc;
+    padding: 0.5em;
+}
+
+/* TABLES */
+table {
+    border: 1px solid #DFDFDF;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+tr {
+    border: 0;
+}
+
+tr>td:first-child, tr>th:first-child {
+    padding-left: 1.25em;
+}
+
+tr>td:last-child, tr>th:last-child {
+    padding-right: 1.25em;
+}
+
+td, th {
+    line-height: 1.5em;
+    padding: 0.5em 0.6em;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #efefef;
+    background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
+    color: #000000;
+    font-weight: bold;
+    line-height: 3em;
+    padding: 0.2em 0.6em;
+}
+
+thead th {
+    white-space: nowrap;
+}
+
+th a {
+    display: block;
+    text-decoration: none;
+}
+
+th a:link, th a:visited {
+    color: #000000;
+}
+
+th a:hover, th a:focus {
+    color: #333333;
+}
+
+th.sortable a {
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 1.1em;
+}
+
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+
+.even {
+    background: #ffffff;
+}
+
+th:hover, tr:hover {
+    background: #BAFAD7;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    background: mediumspringgreen; /* Old browsers */
+    background: mediumspringgreen -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
+    background: mediumspringgreen -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+    background: mediumspringgreen -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+    background: mediumspringgreen -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+    background: mediumspringgreen -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+    background: mediumspringgreen linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+    border: 1px solid mediumspringgreen;
+    border-top: 1px solid mediumspringgreen;
+    border-left: 1px solid mediumspringgreen;
+    color: #000000;
+    display: inline-block;
+    font-size: 11px;
+    text-decoration: none;
+    text-shadow: none;}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    color: #222;
+    background: mediumspringgreen; /* Old browsers */
+    background: mediumspringgreen -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
+    background: mediumspringgreen -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
+    background: mediumspringgreen -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
+    background: mediumspringgreen -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
+    background: mediumspringgreen -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
+    background: mediumspringgreen linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
+    border: 1px solid mediumseagreen;
+    border-top: 1px solid mediumseagreen;
+    border-left: 1px solid mediumseagreen; }
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+    border: 1px solid mediumseagreen;
+    background: mediumspringgreen; /* Old browsers */
+    background: mediumspringgreen -moz-linear-gradient(top, rgba(255,255,255,.35) 0%, rgba(10,10,10,.4) 100%); /* FF3.6+ */
+    background: mediumspringgreen -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.35)), color-stop(100%,rgba(10,10,10,.4))); /* Chrome,Safari4+ */
+    background: mediumspringgreen -webkit-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: mediumspringgreen -o-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Opera11.10+ */
+    background: mediumspringgreen -ms-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* IE10+ */
+    background: mediumspringgreen linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* W3C */ }

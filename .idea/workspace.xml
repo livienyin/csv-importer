@@ -11,8 +11,8 @@
     <file path="$PROJECT_DIR$/../csv-assignment/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375307535525" ignored="false" />
     <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375923571314" ignored="false" />
     <file path="/Company.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375401848157" ignored="false" />
-    <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375921038094" ignored="false" />
-    <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375997770669" ignored="false" />
+    <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376007072715" ignored="false" />
+    <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376002290949" ignored="false" />
     <file path="/Contact.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375911748551" ignored="false" />
     <file path="/main.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375979288749" ignored="false" />
     <file path="$PROJECT_DIR$/../monolith/test/restful/credit_invoice_full.json" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375726656280" ignored="false" />
@@ -20,11 +20,12 @@
     <file path="/_createBox.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375892743584" ignored="false" />
     <file path="/modal.css" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375893304661" ignored="false" />
     <file path="/_editModal.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375901934723" ignored="false" />
-    <file path="/application.css" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375996099778" ignored="false" />
+    <file path="/application.css" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376003352588" ignored="false" />
     <file path="/_createModal.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375901426817" ignored="false" />
-    <file path="/main.css" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375907401060" ignored="false" />
+    <file path="/main.css" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375998742402" ignored="false" />
     <file path="/modal.js" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375910275278" ignored="false" />
     <file path="/UploadService.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375921430935" ignored="false" />
+    <file path="/Dummy.txt" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376006872345" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,25 +98,52 @@
       <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="16" selection-start="743" selection-end="743" vertical-scroll-proportion="-3.367347">
+            <state line="12" column="16" selection-start="743" selection-end="743" vertical-scroll-proportion="-3.6734693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-app/css/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="142" column="17" selection-start="2704" selection-end="2704" vertical-scroll-proportion="-0.29385966">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="47" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.43609023">
+            <state line="7" column="58" selection-start="347" selection-end="347" vertical-scroll-proportion="4.780488">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="0" selection-start="4089" selection-end="5435" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/layout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="2" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skeleton.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/skeleton.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="242" column="0" selection-start="9143" selection-end="9143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +152,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="31" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+            <state line="415" column="58" selection-start="7485" selection-end="7485" vertical-scroll-proportion="-169.8">
               <folding />
             </state>
           </provider>
@@ -158,21 +186,20 @@
         <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/csvParse/UploadService.groovy" />
-        <option value="$PROJECT_DIR$/web-app/css/main.css" />
         <option value="$PROJECT_DIR$/web-app/css/base.css" />
         <option value="$PROJECT_DIR$/web-app/css/layout.css" />
         <option value="$PROJECT_DIR$/web-app/css/skeleton.css" />
-        <option value="$PROJECT_DIR$/web-app/css/application.css" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/main.css" />
         <option value="$PROJECT_DIR$/grails-app/views/contact/list.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/application.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
     <option name="y" value="22" />
-    <option name="width" value="1250" />
-    <option name="height" value="790" />
+    <option name="width" value="1397" />
+    <option name="height" value="919" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -266,6 +293,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -295,7 +362,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Skeleton" />
+    <property name="last_opened_file_path" value="$USER_HOME$/monolith" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -431,7 +498,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="22" width="1250" height="790" extended-state="0" />
+    <frame x="0" y="22" width="1397" height="919" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -451,7 +518,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2848837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -581,15 +648,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="62" selection-start="459" selection-end="459" vertical-scroll-proportion="-9.0">
           <folding>
-            <element signature="e#18#40#0" expanded="true" />
+            <element signature="e#18#40#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.3125">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,23 +660,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/base.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="0" selection-start="9108" selection-end="9108" vertical-scroll-proportion="6.658416">
+        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.3125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="2" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.95153475">
+        <state line="57" column="2" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/skeleton.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="0" selection-start="9143" selection-end="9143" vertical-scroll-proportion="0.8598131">
+        <state line="12" column="16" selection-start="743" selection-end="743" vertical-scroll-proportion="-3.6734693">
           <folding />
         </state>
       </provider>
@@ -628,30 +688,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+    <entry file="file://$PROJECT_DIR$/web-app/css/skeleton.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+        <state line="242" column="0" selection-start="9143" selection-end="9143" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+    <entry file="file://$PROJECT_DIR$/web-app/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="743" selection-end="743" vertical-scroll-proportion="-3.367347">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="129" column="0" selection-start="4089" selection-end="5435" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/contact/list.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.43609023">
+        <state line="7" column="58" selection-start="347" selection-end="347" vertical-scroll-proportion="4.780488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="415" column="58" selection-start="7485" selection-end="7485" vertical-scroll-proportion="-169.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="17" selection-start="2704" selection-end="2704" vertical-scroll-proportion="-0.29385966">
           <folding />
         </state>
       </provider>
