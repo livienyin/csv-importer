@@ -57,10 +57,8 @@ var modal = (function(){
     $overlay.hide();
 
     $(document).ready(function(){
-        console.log("hello");
         $('body').append($overlay, $modal);
     })
-    return method;
 }());
 
 $(document).ready(function(){

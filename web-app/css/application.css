@@ -155,9 +155,9 @@ input[type="button"] {
     background: mediumspringgreen -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
     background: mediumspringgreen -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
     background: mediumspringgreen linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
-    border: 1px solid mediumspringgreen;
-    border-top: 1px solid mediumspringgreen;
-    border-left: 1px solid mediumspringgreen;
+    border: 1px solid mediumseagreen;
+    border-top: 1px solid mediumseagreen;
+    border-left: 1px solid mediumseagreen;
     color: #000000;
     display: inline-block;
     font-size: 11px;
