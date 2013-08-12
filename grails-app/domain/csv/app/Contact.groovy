@@ -13,6 +13,12 @@ class Contact {
     String title
 
     static constraints = {
-
+        email blank: false, unique: true
+        firstName blank: false
+        lastName nullable: true
+        prefix nullable: true
+        phone nullable: true
+        fax nullable: true
+        title nullable: true
     }
 }

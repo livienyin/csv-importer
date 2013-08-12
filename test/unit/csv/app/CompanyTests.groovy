@@ -11,7 +11,4 @@ import org.junit.*
 @TestFor(Company)
 class CompanyTests {
 
-    void testSomething() {
-       fail "Implement me"
-    }
 }
