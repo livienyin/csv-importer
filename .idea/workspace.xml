@@ -11,7 +11,7 @@
     <file path="$PROJECT_DIR$/../csv-assignment/atlassian-ide-plugin.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375307535525" ignored="false" />
     <file path="/ContactController.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375923571314" ignored="false" />
     <file path="/Company.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375401848157" ignored="false" />
-    <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376007072715" ignored="false" />
+    <file path="/a.dummy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376347371199" ignored="false" />
     <file path="/list.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376002290949" ignored="false" />
     <file path="/Contact.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376344309807" ignored="false" />
     <file path="/main.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375979288749" ignored="false" />
@@ -24,7 +24,7 @@
     <file path="/_createModal.gsp" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375901426817" ignored="false" />
     <file path="/main.css" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375998742402" ignored="false" />
     <file path="/modal.js" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375910275278" ignored="false" />
-    <file path="/UploadService.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1375921430935" ignored="false" />
+    <file path="/UploadService.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376353566210" ignored="false" />
     <file path="/Dummy.txt" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376326038020" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-reports/html/csv/app/0_CompanyControllerTests.html" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376334820044" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-reports/html/csv/app/2_ContactControllerTests.html" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376334820044" ignored="false" />
@@ -40,6 +40,8 @@
     <file path="$PROJECT_DIR$/target/test-reports/plain/TEST-unit-unit-csv.app.ContactTests.txt" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376342369845" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-reports/html/failed.html" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376342956742" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-reports/html/index.html" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376342956743" ignored="false" />
+    <file path="/UploadServiceTests.groovy" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376352510092" ignored="false" />
+    <file path="$PROJECT_DIR$/target/test-reports/TEST-unit-unit-csvParse.UploadServiceTests.xml" changelist="c8a8b636-76b9-48d1-bb12-83ae0b5210ab" time="1376352225971" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +102,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="ContactController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="8" selection-start="6205" selection-end="6249" vertical-scroll-proportion="-17.565218">
+              <folding>
+                <element signature="e#17#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadServiceTests.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/csvParse/UploadServiceTests.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="73" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#18#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Contact.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,10 +136,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactTests.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ContactTests.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/csv/app/ContactTests.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="18" selection-start="511" selection-end="511" vertical-scroll-proportion="0.50691247">
+            <state line="11" column="0" selection-start="192" selection-end="217" vertical-scroll-proportion="-1.2972972">
               <folding>
                 <element signature="e#19#45#0" expanded="true" />
               </folding>
@@ -123,28 +147,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadServiceTests.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/csvParse/UploadServiceTests.groovy">
+      <file leaf-file-name="UploadService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/csvParse/UploadService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="251" selection-end="279" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactControllerTests.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/csv/app/ContactControllerTests.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="94" selection-end="108" vertical-scroll-proportion="6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
+            <state line="28" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.5586207">
               <folding />
             </state>
           </provider>
@@ -161,7 +167,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/csvParse/UploadService.groovy" />
         <option value="$PROJECT_DIR$/web-app/css/base.css" />
         <option value="$PROJECT_DIR$/web-app/css/layout.css" />
         <option value="$PROJECT_DIR$/web-app/css/skeleton.css" />
@@ -172,10 +177,11 @@
         <option value="$PROJECT_DIR$/web-app/js/modal.js" />
         <option value="$PROJECT_DIR$/test/unit/csv/app/CompanyControllerTests.groovy" />
         <option value="$PROJECT_DIR$/test/unit/csv/app/CompanyTests.groovy" />
-        <option value="$PROJECT_DIR$/test/unit/csvParse/UploadServiceTests.groovy" />
         <option value="$PROJECT_DIR$/test/unit/csv/app/ContactControllerTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy" />
         <option value="$PROJECT_DIR$/test/unit/csv/app/ContactTests.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/csvParse/UploadServiceTests.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/csvParse/UploadService.groovy" />
       </list>
     </option>
   </component>
@@ -380,7 +386,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csvParse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csv-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -580,7 +630,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -678,15 +728,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/services/csvParse/UploadService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="62" selection-start="459" selection-end="459" vertical-scroll-proportion="-9.0">
-          <folding>
-            <element signature="e#18#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/contact/_editModal.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="8" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.5504587" />
@@ -734,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="41.145832">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/csv/app/CompanyControllerTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="12" selection-start="141" selection-end="141" vertical-scroll-proportion="-3.125">
@@ -762,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/csvParse/UploadServiceTests.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="251" selection-end="279" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/csv/app/Contact.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="28" selection-start="447" selection-end="447" vertical-scroll-proportion="-6.3">
@@ -779,12 +806,37 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/csv/app/ContactController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="8" selection-start="6205" selection-end="6249" vertical-scroll-proportion="-17.565218">
+          <folding>
+            <element signature="e#17#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/csv/app/ContactTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="511" selection-end="511" vertical-scroll-proportion="0.50691247">
+        <state line="11" column="0" selection-start="192" selection-end="217" vertical-scroll-proportion="-1.2972972">
           <folding>
             <element signature="e#19#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/csvParse/UploadServiceTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="73" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/csvParse/UploadService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.5586207">
+          <folding />
         </state>
       </provider>
     </entry>
